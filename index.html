@@ -111,16 +111,12 @@
                     </div>
                     <form id="materials-form">
                         <div class="form-group">
-                            <label for="name">Full Name</label>
+                            <label for="name">Name</label>
                             <input type="text" id="name" name="name" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
                             <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone</label>
-                            <input type="tel" id="phone" name="phone">
                         </div>
                         <div class="form-group">
                             <label for="address">Address</label>
@@ -130,15 +126,17 @@
                             <label for="materials">Materials Needed</label>
                             <select id="materials" name="materials" required>
                                 <option value="">Select materials needed</option>
-                                <option value="basic-kit">Basic Repair Kit (rope, clips)</option>
-                                <option value="full-net">Complete Net Replacement</option>
-                                <option value="tools">Tools (scissors, measuring tape)</option>
-                                <option value="multiple">Multiple nets/locations</option>
+                                <option value="clips">Net Clips</option>
+                                <option value="patch1">Net Patch 1' x 1'</option>
+                                <option value="patch2">Net Patch 2' x 2'</option>
+                                <option value="patch2">Net Patch 3' x 3'</option>
+                                <option value="patchCustom">Custum Net Patch</option>
+                                <option value="cord">Net Repairing Cord</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label for="details">Additional Details</label>
-                            <textarea id="details" name="details" rows="3" placeholder="Describe the condition of the nets and any specific needs..."></textarea>
+                            <textarea id="details" name="details" rows="3" placeholder="Enter custum dimensions if needed"></textarea>
                         </div>
                         <button type="submit" class="submit-btn">Request Materials</button>
                     </form>
@@ -147,20 +145,20 @@
                 <div class="form-card">
                     <h3>Report Broken Net</h3>
                     <div id="report-success" class="success-message">
-                        Thank you for reporting! We'll add this location to our repair schedule.
+                        Thank you for reporting! We'll add this location to our list.
                     </div>
                     <form id="report-form">
                         <div class="form-group">
-                            <label for="reporter-name">Your Name</label>
+                            <label for="reporter-name">Name</label>
                             <input type="text" id="reporter-name" name="reporter-name" required>
                         </div>
                         <div class="form-group">
-                            <label for="reporter-email">Email</label>
-                            <input type="email" id="reporter-email" name="reporter-email" required>
+                            <label for="fieldName">Field Name</label>
+                            <input type="text" id="field-name" name="field-name" required>
                         </div>
                         <div class="form-group">
                             <label for="location">Location of Broken Net</label>
-                            <textarea id="location" name="location" rows="3" placeholder="Park name, address, or detailed description..." required></textarea>
+                            <textarea id="location" name="location" rows="3" placeholder="Field address" required></textarea>
                         </div>
                         <div class="form-group">
                             <label for="damage-type">Type of Damage</label>
@@ -173,18 +171,8 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="urgency">Urgency Level</label>
-                            <select id="urgency" name="urgency" required>
-                                <option value="">Select urgency</option>
-                                <option value="low">Low - Can wait a few weeks</option>
-                                <option value="medium">Medium - Needed within a week</option>
-                                <option value="high">High - Heavily used location</option>
-                                <option value="event">Event - Upcoming tournament/game</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
                             <label for="description">Description</label>
-                            <textarea id="description" name="description" rows="3" placeholder="Additional details about the damage, location accessibility, etc..."></textarea>
+                            <textarea id="description" name="description" rows="3" placeholder="Additional details about the damage, size, urgency, materials needed, etc..."></textarea>
                         </div>
                         <button type="submit" class="submit-btn">Report Location</button>
                     </form>
