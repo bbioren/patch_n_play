@@ -8,7 +8,7 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #333;
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    background: linear-gradient(135deg, #303030 0%, #000000 100%);
     min-height: 100vh;
 }
 
@@ -34,6 +34,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 5vh;
 }
 
 .logo {
@@ -65,7 +66,7 @@ nav {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%2322c55e" width="1200" height="600"/><circle fill="%23ffffff" opacity="0.1" cx="200" cy="150" r="50"/><circle fill="%23ffffff" opacity="0.1" cx="1000" cy="450" r="80"/><polygon fill="%23ffffff" opacity="0.05" points="600,100 650,200 550,200"/></svg>');
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(76, 76, 76, 0.6)), url('assets/background.jpg');
     height: 100vh;
     display: flex;
     align-items: center;
@@ -75,6 +76,7 @@ nav {
     background-size: cover;
     background-position: center;
 }
+
 
 .hero-content h1 {
     font-size: 3.5rem;
@@ -92,7 +94,7 @@ nav {
 
 .cta-button {
     display: inline-block;
-    background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+    background: linear-gradient(135deg, #1d2852 0%, #271735 100%);
     color: white;
     padding: 1rem 2rem;
     text-decoration: none;
@@ -100,13 +102,13 @@ nav {
     font-weight: bold;
     font-size: 1.1rem;
     transition: all 0.3s ease;
-    box-shadow: 0 10px 30px rgba(255, 107, 107, 0.4);
+    box-shadow: 0 10px 30px rgba(10, 5, 77, 0.4);
     animation: fadeInUp 1s ease 0.6s both;
 }
 
 .cta-button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 15px 40px rgba(255, 107, 107, 0.6);
+    box-shadow: 0 20px 60px rgba(24, 23, 27, 0.6);
 }
 
 /* Sections */
@@ -119,14 +121,14 @@ section {
     background: white;
     border-radius: 20px;
     margin: 2rem 0;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+    box-shadow: 0 30px 90px rgba(0,0,0,0.1);
 }
 
 .section-title {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 3rem;
-    color: #2a5298;
+    color: #1d2852;
     position: relative;
 }
 
@@ -135,7 +137,7 @@ section {
     display: block;
     width: 80px;
     height: 4px;
-    background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+    background: linear-gradient(45deg, #192247, #110f36);
     margin: 1rem auto;
     border-radius: 2px;
 }
@@ -154,7 +156,7 @@ section {
 }
 
 .mission-card {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #1d2852 0%, #271735 100%);
     color: white;
     padding: 2rem;
     border-radius: 15px;
@@ -203,7 +205,7 @@ section {
 }
 
 .tutorial-text {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    background: linear-gradient(135deg, #1d2852 0%, #271735 100%);
     color: white;
     padding: 2rem;
     border-radius: 15px;
@@ -222,7 +224,7 @@ section {
 
 .download-btn {
     display: inline-block;
-    background: rgba(255,255,255,0.2);
+    background: rgba(1, 8, 1, 0.2);
     color: white;
     padding: 0.8rem 1.5rem;
     text-decoration: none;
@@ -337,17 +339,6 @@ footer {
     }
 }
 
-/* Success Message */
-.success-message {
-    background: #4CAF50;
-    color: white;
-    padding: 1rem;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-    display: none;
-    animation: fadeInUp 0.5s ease;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-links {
@@ -369,4 +360,15 @@ footer {
     .mission-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* Success Message */
+.success-message {
+    background: #4CAF50;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    display: none;
+    animation: fadeInUp 0.5s ease;
 }
