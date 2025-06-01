@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patch and Play - Restoring Community Soccer One Net at a Time</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">⚽ Patch and Play</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#mission">Mission</a></li>
+                <li><a href="#tutorial">Learn</a></li>
+                <li><a href="#forms">Take Action</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Patch 'N Play</h1>
+            <p>Restoring Community Soccer One Net at a Time</p>
+            <a href="#mission" class="cta-button">Join Our Mission</a>
+        </div>
+    </section>
+
+    <div class="container">
+        <section id="mission" class="section-white mission">
+            <h2 class="section-title">Our Mission</h2>
+            <p style="font-size: 1.2rem; color: #666; text-align: center; max-width: 800px; margin: 0 auto;">
+                Every neighborhood deserves functioning soccer nets. We empower communities to repair and maintain their local soccer goals, through teaching repair techniques and making materials accesible.
+            </p>
+            
+            <div class="mission-grid">
+                <div class="mission-card">
+                    <h3>Learn</h3>
+                    <p>Learn how to repair soccer nets with our instructional manual or instructional video. Join one of our weekly local repair sessions to master the process.</p>
+                </div>
+                <div class="mission-card">
+                    <h3>Get Materials</h3>
+                    <p>Request any net fixing material you need to mend your community nets. We offer a range or resources from patches of net to paracord.</p>
+                </div>
+                <div class="mission-card">
+                    <h3>Repair</h3>
+                    <p>Repair local soccer nets to help keep the game alive. Use the net building techniques we cover and the materials we provide. Join one of our weekly net fixing events!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tutorial" class="section-white tutorial">
+            <h2 class="section-title">Learn How to Fix Soccer Nets</h2>
+            <div class="tutorial-content">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/JF2DRfaGIlQ" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="tutorial-text">
+                    <h3>Net Repair Techniques</h3>
+                    <p>Watch our video tutorial and download our full guide to learn the three basic knots needed!</p>
+                    
+                    <div style="margin: 1rem 0; padding: 1rem; background: rgba(255,255,255,0.1); border-radius: 10px;">
+                        <h4 style="font-size: 1.2rem;">The Slip Knot</h4>
+                    </div>
+                    
+                    <div style="margin: 1rem 0; padding: 1rem; background: rgba(255,255,255,0.1); border-radius: 10px;">
+                        <h4 style="font-size: 1.2rem;">The Net Knot</h4>
+                    </div>
+
+                    <div style="margin: 1rem 0; padding: 1rem; background: rgba(255,255,255,0.1); border-radius: 10px;">
+                        <h4 style="font-size: 1.2rem;">The Overhand Knot</h4>
+                    </div>
+                    
+                    <a href="#" class="download-btn" onclick="downloadGuide()">Download Complete PDF Guide</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="forms" class="section-white forms">
+            <h2 class="section-title">Take Action</h2>
+            <div class="forms-grid">
+                <div class="form-card">
+                    <h3>Request Repair Materials</h3>
+                    <div id="materials-success" class="success-message">
+                        Thank you! We'll process your material request and contact you within 3-5 business days.
+                    </div>
+                    <form id="materials-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <textarea id="address" name="address" rows="3" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="materials">Materials Needed</label>
+                            <select id="materials" name="materials" required>
+                                <option value="">Select materials needed</option>
+                                <option value="basic-kit">Basic Repair Kit (rope, clips)</option>
+                                <option value="full-net">Complete Net Replacement</option>
+                                <option value="tools">Tools (scissors, measuring tape)</option>
+                                <option value="multiple">Multiple nets/locations</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="details">Additional Details</label>
+                            <textarea id="details" name="details" rows="3" placeholder="Describe the condition of the nets and any specific needs..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Request Materials</button>
+                    </form>
+                </div>
+
+                <div class="form-card">
+                    <h3>Report Broken Net</h3>
+                    <div id="report-success" class="success-message">
+                        Thank you for reporting! We'll add this location to our repair schedule.
+                    </div>
+                    <form id="report-form">
+                        <div class="form-group">
+                            <label for="reporter-name">Your Name</label>
+                            <input type="text" id="reporter-name" name="reporter-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reporter-email">Email</label>
+                            <input type="email" id="reporter-email" name="reporter-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Location of Broken Net</label>
+                            <textarea id="location" name="location" rows="3" placeholder="Park name, address, or detailed description..." required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="damage-type">Type of Damage</label>
+                            <select id="damage-type" name="damage-type" required>
+                                <option value="">Select damage type</option>
+                                <option value="torn">Torn/Ripped Net</option>
+                                <option value="missing">Missing Net Entirely</option>
+                                <option value="detached">Net Detached from Goal</option>
+                                <option value="multiple-issues">Multiple Issues</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="urgency">Urgency Level</label>
+                            <select id="urgency" name="urgency" required>
+                                <option value="">Select urgency</option>
+                                <option value="low">Low - Can wait a few weeks</option>
+                                <option value="medium">Medium - Needed within a week</option>
+                                <option value="high">High - Heavily used location</option>
+                                <option value="event">Event - Upcoming tournament/game</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Description</label>
+                            <textarea id="description" name="description" rows="3" placeholder="Additional details about the damage, location accessibility, etc..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Report Location</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Net Keepers. Bringing communities together through soccer.</p>
+            <p>Contact us: info@netkeepers.org | (555) 123-NETS</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
