@@ -349,6 +349,7 @@ footer {
     text-align: center;
     padding: 2rem 0;
     margin-top: 3rem;
+    display: flex
 }
 
 /* Animations */
